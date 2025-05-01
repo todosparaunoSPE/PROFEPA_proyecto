@@ -264,6 +264,14 @@ def main():
     • Soporte a decisiones estratégicas basado en datos  
     """)
 
+    # Botón para descargar el manual PDF
+    with open("manual.pdf", "rb") as file:
+    st.sidebar.download_button(
+        label="📥 Descargar Manual",
+        data=file,
+        file_name="manual.pdf",
+        mime="application/pdf"
+    )
 
    
     # Menú de módulos
