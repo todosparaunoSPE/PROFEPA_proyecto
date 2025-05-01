@@ -254,6 +254,17 @@ def dashboard_decisiones():
 # --------------------------
 # INTERFAZ PRINCIPAL
 # --------------------------
+
+ # Esto está bien (con indentación dentro del bloque `with`)
+with open("manual.pdf", "rb") as file:
+    st.sidebar.download_button(
+        label="📥 Descargar Manual",
+        data=file,
+        file_name="manual.pdf",
+        mime="application/pdf"
+    )
+
+
 def main():
     st.title("🌍 Sistema Integral de Gestión Ambiental")
     st.markdown("""
@@ -264,14 +275,7 @@ def main():
     • Soporte a decisiones estratégicas basado en datos  
     """)
 
-    # Esto está bien (con indentación dentro del bloque `with`)
-with open("manual.pdf", "rb") as file:
-    st.sidebar.download_button(
-        label="📥 Descargar Manual",
-        data=file,
-        file_name="manual.pdf",
-        mime="application/pdf"
-    )
+   
 
 
    
