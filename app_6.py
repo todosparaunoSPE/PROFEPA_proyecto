@@ -265,16 +265,7 @@ def main():
     """)
 
 
-   # Botón de descarga
-    st.sidebar.download_button(
-    label="📄 Descargar Proyecto Final",
-    data=pdf_bytes,
-    file_name="manual.pdf",
-    mime="application/pdf"
-    )
-
-
-  
+   
     # Menú de módulos
     modulo = st.sidebar.selectbox("Seleccione módulo", [
         "Monitoreo en Redes",
