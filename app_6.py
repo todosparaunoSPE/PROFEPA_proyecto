@@ -266,7 +266,7 @@ with open("manual.pdf", "rb") as file:
 
 
 def main():
-    st.title("🌍 Sistema Integral de Gestión Ambiental")
+    st.title("🌍 PROFEPA: Sistema Integral de Gestión Ambiental")
     st.markdown("""
     **Competencias demostradas:**  
     • Modelado predictivo ML/DL con métricas avanzadas  
